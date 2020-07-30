@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bookers2</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  <header>
+    <div class="container">
+      <nav class="navbar-left">
+        <p class="header-logo">Bookers</p>
+      </nav>
+      <nav class="navbar-right">
+        <ul>
+          <li class="navbar-right-item home"><a href="#">Home</a></li>
+          <li class="navbar-right-item About"><a href="#">About</a></li>
+          <li class="navbar-right-item sign in"><a href="#">sign in</a></li>
+          <li class="navbar-right-item login"><a href="#">login</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+    <%= yield %>
+  </body>
+</html>
