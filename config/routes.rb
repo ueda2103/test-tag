@@ -6,6 +6,7 @@ Rails.application.routes.draw do
     sessions: 'users/sessions'
   }
 
+  get 'home/about' => 'homes#about', as: 'about_home'
   resources :users, only: [:index, :show]
   resources :books, only: [:new, :create, :index, :show]
 end
