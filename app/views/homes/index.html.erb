@@ -6,10 +6,10 @@
     <p>about various books!</p>
     <div class="btn-wrapper">
       <div class="row">
-        <a href="#" class="btn btn-info col-xs-10 col-xs-offset-1 sign_in">Log in</a>
+        <%= link_to "Log in", new_user_session_path, class: "btn btn-info col-xs-10 col-xs-offset-1 sign_in" %>
       </div>
       <div class="row">
-        <a href="#" class="btn btn-success col-xs-10 col-xs-offset-1 sign_up">Sign up</a>
+        <%= link_to "Sign up", new_user_registration_path, class: "btn btn-success col-xs-10 col-xs-offset-1 sign_up" %>
       </div>
     </div>
   </div>
