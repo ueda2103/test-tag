@@ -1,0 +1,16 @@
+<h2>User info</h2>
+<%= form_for(@user, url:"/users/#{@user.id}") do |user| %>
+  <div class="field">
+    <%= user.label :name, "Name" %>
+    <%= user.text_field :name %>
+  </div>
+  <div class="field">
+    <%= user.label :image, "Image" %>
+    <%= user.attachment_field :image, placeholder: "プロフィール画像" %>
+  </div>
+  <div class="field">
+    <%= user.label :introduction, "Introduction" %>
+    <%= user.text_area :introduction %>
+  </div>
+  <%= user.submit 'Update User' %>
+<% end %>
