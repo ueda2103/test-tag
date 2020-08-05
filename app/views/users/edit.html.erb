@@ -1,4 +1,14 @@
 <h2>User info</h2>
+<% if @user.errors.any? %>
+  <div id="error_explanation">
+    <h3><%= pluralize(@user.errors.count, "error") %> prohibited this obj from being saved:</h3>
+    <ul>
+      <% @user.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
 <%= form_for(@user, url:"/users/#{@user.id}") do |user| %>
   <div class="field">
     <%= user.label :name, "Name" %>
