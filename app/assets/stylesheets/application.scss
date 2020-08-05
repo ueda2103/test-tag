@@ -17,7 +17,7 @@
 @import "bootstrap";
 
 .body {
-  margin-top: 51px;
+  margin-top: 55px;
 }
 
 p, ol, ul, td {
@@ -52,6 +52,16 @@ p, ol, ul, td {
 
 #notice {
   color: green;
+}
+
+#error_explanation {
+  color: red;
+
+  ul {
+    margin: 0;
+    margin-left: 2em;
+    margin-bottom: 1em;
+  }
 }
 
 h2 {
