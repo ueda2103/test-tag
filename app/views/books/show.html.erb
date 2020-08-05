@@ -7,7 +7,7 @@
       <tbody>
         <tr>
           <td>
-            <%= attachment_image_tag @book_show.user, :image, :fill, 40, 40, class: "attachment user image", fallback: "no_image.jpg", size: '40x40' %><br>
+            <%= attachment_image_tag @book_show.user, :profile_image, :fill, 100, 100, class: "attachment user profile_image", fallback: "no_image.jpg", size: '100x100' %><br>
             <%= link_to "#{@book_show.user.name}",user_path(@user) %>
           </td>
           <td>

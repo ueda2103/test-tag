@@ -1,7 +1,7 @@
 <div class="col-sm-3">
   <h2>User info</h2>
   <%= form_for(@user) do |user| %>
-    <%= attachment_image_tag @user, :image, :fill, 100, 100, class: "attachment user image", fallback: "no_image.jpg" %>
+    <%= attachment_image_tag @user, :profile_image, :fill, 100, 100, class: "attachment user profile_image", fallback: "no_image.jpg" %>
   <% end %>
   <table class="table">
     <tbody>
