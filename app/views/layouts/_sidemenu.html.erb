@@ -32,6 +32,10 @@
       <%= book.label :body, "Opinion" %>
       <%= book.text_area :body, class: "col-xs-12 book_opinion" %>
     </div>
+    <div class="field row">
+      <%= book.label :tag_list, 'タグ' %>
+      <%= book.text_field :tag_list, value: @book.tag_list.join(','), id: 'tags' %>
+    </div>
     <div class="actions row">
       <%= book.submit 'Create Book', class: "btn btn-primary col-xs-12" %>
     </div>

@@ -17,6 +17,10 @@
         <%= book.text_field :title, class: "col-xs-12" %>
       </div>
       <div class="field row">
+        <%= book.label :tag_list, 'タグ' %>
+        <%= book.text_field :tag_list, value: @book.tag_list.join(','), id: 'tags' %>
+      </div>
+      <div class="field row">
         <%= book.label :body, "Opinion" %>
         <%= book.text_area :body, class: "col-xs-12" %>
       </div>
